@@ -29,7 +29,7 @@ def main():
     start_time = time.perf_counter()
 
     t1 = threading.Thread(target=count_even)
-    t2 = threading.Thread(target=count_odd)  # Fix: Pass function reference
+    t2 = threading.Thread(target=count_odd)
 
     t1.start()
     t2.start()
